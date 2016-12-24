@@ -157,6 +157,14 @@
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
 <text x="-1.38" y="-1.95" size="1.27" layer="21">.</text>
 </package>
+<package name="VLS252010HBU">
+<smd name="P$1" x="-0.95" y="0" dx="0.6" dy="2" layer="1"/>
+<smd name="P$2" x="0.95" y="0" dx="0.6" dy="2" layer="1"/>
+<wire x1="-1.4" y1="-1.1" x2="-1.4" y2="1.1" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="1.1" x2="1.4" y2="1.1" width="0.127" layer="21"/>
+<wire x1="1.4" y1="1.1" x2="1.4" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="1.4" y1="-1.1" x2="-1.4" y2="-1.1" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SPST_SWITCH">
@@ -272,6 +280,14 @@
 <pin name="VO_SET" x="20.32" y="-2.54" length="short" rot="R180"/>
 <pin name="FB" x="20.32" y="-7.62" length="short" rot="R180"/>
 <pin name="LX" x="-5.08" y="12.7" length="short" rot="R270"/>
+</symbol>
+<symbol name="INDUCTOR">
+<pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="P$2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="-2.4" y1="0" x2="-1.2" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-1.2" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="1.2" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="1.2" y1="0" x2="2.4" y2="0" width="0.254" layer="94" curve="-180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -389,6 +405,22 @@
 <connect gate="G$1" pin="VMID" pad="P1"/>
 <connect gate="G$1" pin="VOUT" pad="P2"/>
 <connect gate="G$1" pin="VO_SET" pad="P3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VLS252010HBU">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VLS252010HBU">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
