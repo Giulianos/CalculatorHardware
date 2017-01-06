@@ -140,19 +140,19 @@
 <circle x="-3.5" y="-3.5" radius="0.4" width="0.127" layer="21"/>
 </package>
 <package name="DFN12L">
-<smd name="TERMAL" x="0" y="0" dx="2.12" dy="1.31" layer="1"/>
-<smd name="P3" x="-0.225" y="-1.3" dx="0.3" dy="0.5" layer="1"/>
-<smd name="P2" x="-0.675" y="-1.3" dx="0.3" dy="0.5" layer="1"/>
-<smd name="P1" x="-1.125" y="-1.3" dx="0.3" dy="0.5" layer="1"/>
-<smd name="P4" x="0.225" y="-1.3" dx="0.3" dy="0.5" layer="1"/>
-<smd name="P5" x="0.675" y="-1.3" dx="0.3" dy="0.5" layer="1"/>
-<smd name="P6" x="1.125" y="-1.3" dx="0.3" dy="0.5" layer="1"/>
-<smd name="P7" x="1.125" y="1.3" dx="0.3" dy="0.5" layer="1" rot="R180"/>
-<smd name="P8" x="0.675" y="1.3" dx="0.3" dy="0.5" layer="1" rot="R180"/>
-<smd name="P9" x="0.225" y="1.3" dx="0.3" dy="0.5" layer="1" rot="R180"/>
-<smd name="P10" x="-0.225" y="1.3" dx="0.3" dy="0.5" layer="1" rot="R180"/>
-<smd name="P11" x="-0.675" y="1.3" dx="0.3" dy="0.5" layer="1" rot="R180"/>
-<smd name="P12" x="-1.125" y="1.3" dx="0.3" dy="0.5" layer="1" rot="R180"/>
+<smd name="TERM" x="0" y="0" dx="2.12" dy="1.31" layer="1"/>
+<smd name="P3" x="-0.225" y="-1.3" dx="0.28" dy="0.5" layer="1"/>
+<smd name="P2" x="-0.675" y="-1.3" dx="0.28" dy="0.5" layer="1"/>
+<smd name="P1" x="-1.125" y="-1.3" dx="0.28" dy="0.5" layer="1"/>
+<smd name="P4" x="0.225" y="-1.3" dx="0.28" dy="0.5" layer="1"/>
+<smd name="P5" x="0.675" y="-1.3" dx="0.28" dy="0.5" layer="1"/>
+<smd name="P6" x="1.125" y="-1.3" dx="0.28" dy="0.5" layer="1"/>
+<smd name="P7" x="1.125" y="1.3" dx="0.28" dy="0.5" layer="1" rot="R180"/>
+<smd name="P8" x="0.675" y="1.3" dx="0.28" dy="0.5" layer="1" rot="R180"/>
+<smd name="P9" x="0.225" y="1.3" dx="0.28" dy="0.5" layer="1" rot="R180"/>
+<smd name="P10" x="-0.225" y="1.3" dx="0.28" dy="0.5" layer="1" rot="R180"/>
+<smd name="P11" x="-0.675" y="1.3" dx="0.28" dy="0.5" layer="1" rot="R180"/>
+<smd name="P12" x="-1.125" y="1.3" dx="0.28" dy="0.5" layer="1" rot="R180"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
 <text x="-1.38" y="-1.95" size="1.27" layer="21">.</text>
@@ -211,11 +211,34 @@
 <wire x1="1.2" y1="3.9" x2="3.3" y2="3.9" width="0.127" layer="21"/>
 <wire x1="3.3" y1="3.9" x2="3.3" y2="3.5" width="0.127" layer="21"/>
 </package>
+<package name="BGA8">
+<smd name="D1" x="0.2" y="0.6" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="D2" x="-0.2" y="0.6" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="C1" x="0.2" y="0.2" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="C2" x="-0.2" y="0.2" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="B1" x="0.2" y="-0.2" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="B2" x="-0.2" y="-0.2" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="A1" x="0.2" y="-0.6" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<smd name="A2" x="-0.2" y="-0.6" dx="0.23" dy="0.23" layer="1" roundness="100"/>
+<wire x1="-0.453" y1="-0.8" x2="-0.453" y2="0.792" width="0.127" layer="21"/>
+<wire x1="-0.453" y1="0.792" x2="0.443" y2="0.792" width="0.127" layer="21"/>
+<wire x1="0.443" y1="0.792" x2="0.443" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="0.443" y1="-0.8" x2="-0.453" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="0.2286" y1="-0.9906" x2="0.2032" y2="-0.9906" width="0.127" layer="21"/>
+</package>
+<package name="CRYSTAL_5X3.2">
+<smd name="P$1" x="-1.75" y="-1.05" dx="1.6" dy="1.3" layer="1"/>
+<smd name="P$2" x="1.75" y="-1.05" dx="1.6" dy="1.3" layer="1"/>
+<smd name="P$3" x="1.75" y="1.05" dx="1.6" dy="1.3" layer="1"/>
+<smd name="P$4" x="-1.75" y="1.05" dx="1.6" dy="1.3" layer="1"/>
+<wire x1="-2.91" y1="-2.17" x2="-2.9" y2="-2.17" width="0.127" layer="21"/>
+<wire x1="-2.9" y1="-2.17" x2="-2.9" y2="-2.15" width="0.3" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SPST_SWITCH">
-<pin name="P$1" x="-5.08" y="0" visible="pad" length="short"/>
-<pin name="P$2" x="5.08" y="0" visible="pad" length="short" rot="R180"/>
+<pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="P$2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
 <wire x1="-2.54" y1="0" x2="2.54" y2="2.54" width="0.1905" layer="94"/>
 </symbol>
 <symbol name="STM32L471RGT6_POWER">
@@ -223,109 +246,109 @@
 <wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-10.16" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
-<pin name="VBAT" x="-10.16" y="10.16" length="short"/>
-<pin name="VDD1" x="-10.16" y="5.08" length="short"/>
-<pin name="VDD2" x="-10.16" y="2.54" length="short"/>
-<pin name="VDD3" x="-10.16" y="0" length="short"/>
-<pin name="VDD4" x="-10.16" y="-2.54" length="short"/>
-<pin name="VSS1" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="VSS2" x="12.7" y="2.54" length="short" rot="R180"/>
-<pin name="VSS3" x="12.7" y="0" length="short" rot="R180"/>
-<pin name="VSS4" x="12.7" y="-2.54" length="short" rot="R180"/>
-<pin name="VDDA" x="-10.16" y="-7.62" length="short"/>
-<pin name="VSSA" x="12.7" y="-7.62" length="short" rot="R180"/>
+<pin name="VBAT" x="-10.16" y="10.16" visible="pin" length="short"/>
+<pin name="VDD1" x="-10.16" y="5.08" visible="pin" length="short"/>
+<pin name="VDD2" x="-10.16" y="2.54" visible="pin" length="short"/>
+<pin name="VDD3" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="VDD4" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="VSS1" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="VSS2" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VSS3" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="VSS4" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VDDA" x="-10.16" y="-7.62" visible="pin" length="short"/>
+<pin name="VSSA" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
 </symbol>
 <symbol name="STM32L471RGT6_A">
 <wire x1="-7.62" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-10.16" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
-<pin name="PA0" x="-10.16" y="10.16" length="short"/>
-<pin name="PA1" x="-10.16" y="7.62" length="short"/>
-<pin name="PA2" x="-10.16" y="5.08" length="short"/>
-<pin name="PA3" x="-10.16" y="2.54" length="short"/>
-<pin name="PA4" x="-10.16" y="0" length="short"/>
-<pin name="PA5" x="-10.16" y="-2.54" length="short"/>
-<pin name="PA6" x="-10.16" y="-5.08" length="short"/>
-<pin name="PA7" x="-10.16" y="-7.62" length="short"/>
-<pin name="PA8" x="12.7" y="-7.62" length="short" rot="R180"/>
-<pin name="PA9" x="12.7" y="-5.08" length="short" rot="R180"/>
-<pin name="PA10" x="12.7" y="-2.54" length="short" rot="R180"/>
-<pin name="PA11" x="12.7" y="0" length="short" rot="R180"/>
-<pin name="PA12" x="12.7" y="2.54" length="short" rot="R180"/>
-<pin name="PA13" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="PA14" x="12.7" y="7.62" length="short" rot="R180"/>
-<pin name="PA15" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="PA0" x="-10.16" y="10.16" visible="pin" length="short"/>
+<pin name="PA1" x="-10.16" y="7.62" visible="pin" length="short"/>
+<pin name="PA2" x="-10.16" y="5.08" visible="pin" length="short"/>
+<pin name="PA3" x="-10.16" y="2.54" visible="pin" length="short"/>
+<pin name="PA4" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="PA5" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="PA6" x="-10.16" y="-5.08" visible="pin" length="short"/>
+<pin name="PA7" x="-10.16" y="-7.62" visible="pin" length="short"/>
+<pin name="PA8" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PA9" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PA10" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PA11" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="PA12" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PA13" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PA14" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PA15" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
 </symbol>
 <symbol name="STM32L471RGT6_B">
 <wire x1="-7.62" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-10.16" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
-<pin name="PB0" x="-10.16" y="10.16" length="short"/>
-<pin name="PB1" x="-10.16" y="7.62" length="short"/>
-<pin name="PB2" x="-10.16" y="5.08" length="short"/>
-<pin name="PB3" x="-10.16" y="2.54" length="short"/>
-<pin name="PB4" x="-10.16" y="0" length="short"/>
-<pin name="PB5" x="-10.16" y="-2.54" length="short"/>
-<pin name="PB6" x="-10.16" y="-5.08" length="short"/>
-<pin name="PB7" x="-10.16" y="-7.62" length="short"/>
-<pin name="PB8" x="12.7" y="-7.62" length="short" rot="R180"/>
-<pin name="PB9" x="12.7" y="-5.08" length="short" rot="R180"/>
-<pin name="PB10" x="12.7" y="-2.54" length="short" rot="R180"/>
-<pin name="PB11" x="12.7" y="0" length="short" rot="R180"/>
-<pin name="PB12" x="12.7" y="2.54" length="short" rot="R180"/>
-<pin name="PB13" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="PB14" x="12.7" y="7.62" length="short" rot="R180"/>
-<pin name="PB15" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="PB0" x="-10.16" y="10.16" visible="pin" length="short"/>
+<pin name="PB1" x="-10.16" y="7.62" visible="pin" length="short"/>
+<pin name="PB2" x="-10.16" y="5.08" visible="pin" length="short"/>
+<pin name="PB3" x="-10.16" y="2.54" visible="pin" length="short"/>
+<pin name="PB4" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="PB5" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="PB6" x="-10.16" y="-5.08" visible="pin" length="short"/>
+<pin name="PB7" x="-10.16" y="-7.62" visible="pin" length="short"/>
+<pin name="PB8" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PB9" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PB10" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PB11" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="PB12" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PB13" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PB14" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PB15" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
 </symbol>
 <symbol name="STM32L471RGT6_C">
 <wire x1="-7.62" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-10.16" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
-<pin name="PC0" x="-10.16" y="10.16" length="short"/>
-<pin name="PC1" x="-10.16" y="7.62" length="short"/>
-<pin name="PC2" x="-10.16" y="5.08" length="short"/>
-<pin name="PC3" x="-10.16" y="2.54" length="short"/>
-<pin name="PC4" x="-10.16" y="0" length="short"/>
-<pin name="PC5" x="-10.16" y="-2.54" length="short"/>
-<pin name="PC6" x="-10.16" y="-5.08" length="short"/>
-<pin name="PC7" x="-10.16" y="-7.62" length="short"/>
-<pin name="PC8" x="12.7" y="-7.62" length="short" rot="R180"/>
-<pin name="PC9" x="12.7" y="-5.08" length="short" rot="R180"/>
-<pin name="PC10" x="12.7" y="-2.54" length="short" rot="R180"/>
-<pin name="PC11" x="12.7" y="0" length="short" rot="R180"/>
-<pin name="PC12" x="12.7" y="2.54" length="short" rot="R180"/>
-<pin name="PC13" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="PC14" x="12.7" y="7.62" length="short" rot="R180"/>
-<pin name="PC15" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="PC0" x="-10.16" y="10.16" visible="pin" length="short"/>
+<pin name="PC1" x="-10.16" y="7.62" visible="pin" length="short"/>
+<pin name="PC2" x="-10.16" y="5.08" visible="pin" length="short"/>
+<pin name="PC3" x="-10.16" y="2.54" visible="pin" length="short"/>
+<pin name="PC4" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="PC5" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="PC6" x="-10.16" y="-5.08" visible="pin" length="short"/>
+<pin name="PC7" x="-10.16" y="-7.62" visible="pin" length="short"/>
+<pin name="PC8" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PC9" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PC10" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PC11" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="PC12" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PC13" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PC14" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PC15" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
 </symbol>
 <symbol name="STM32L471RGT6_MISC">
 <wire x1="-7.62" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="12.7" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-2.54" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
-<pin name="PD2" x="12.7" y="10.16" length="short" rot="R180"/>
-<pin name="PH0" x="-10.16" y="10.16" length="short"/>
-<pin name="PH1" x="-10.16" y="7.62" length="short"/>
-<pin name="NRST" x="-10.16" y="2.54" length="short"/>
-<pin name="BOOT0" x="-10.16" y="0" length="short"/>
+<pin name="PD2" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="PH0" x="-10.16" y="10.16" visible="pin" length="short"/>
+<pin name="PH1" x="-10.16" y="7.62" visible="pin" length="short"/>
+<pin name="NRST" x="-10.16" y="2.54" visible="pin" length="short"/>
+<pin name="BOOT0" x="-10.16" y="0" visible="pin" length="short"/>
 </symbol>
 <symbol name="STOD1317BTPUR">
 <wire x1="-15.24" y1="10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="17.78" y1="-10.16" x2="17.78" y2="10.16" width="0.254" layer="94"/>
 <wire x1="17.78" y1="10.16" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
-<pin name="VIN" x="-17.78" y="5.08" length="short"/>
-<pin name="EN" x="-17.78" y="-5.08" length="short"/>
-<pin name="GND" x="0" y="-12.7" length="short" rot="R90"/>
-<pin name="PGND" x="-5.08" y="-12.7" length="short" rot="R90"/>
-<pin name="VMID" x="20.32" y="7.62" length="short" rot="R180"/>
-<pin name="VOUT" x="20.32" y="2.54" length="short" rot="R180"/>
-<pin name="VO_SET" x="20.32" y="-2.54" length="short" rot="R180"/>
-<pin name="FB" x="20.32" y="-7.62" length="short" rot="R180"/>
-<pin name="LX" x="-5.08" y="12.7" length="short" rot="R270"/>
+<pin name="VIN" x="-17.78" y="5.08" visible="pin" length="short"/>
+<pin name="EN" x="-17.78" y="-5.08" visible="pin" length="short"/>
+<pin name="GND" x="0" y="-12.7" visible="pin" length="short" rot="R90"/>
+<pin name="PGND" x="-5.08" y="-12.7" visible="pin" length="short" rot="R90"/>
+<pin name="VMID" x="20.32" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="VOUT" x="20.32" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VO_SET" x="20.32" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="FB" x="20.32" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="LX" x="-5.08" y="12.7" visible="pin" length="short" rot="R270"/>
 </symbol>
 <symbol name="INDUCTOR">
 <pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
@@ -342,14 +365,14 @@
 <wire x1="15.24" y1="0" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-12.7" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
-<pin name="DAT2" x="-10.16" y="7.62" length="short"/>
-<pin name="CD/DAT3" x="-10.16" y="5.08" length="short"/>
-<pin name="CMD" x="-10.16" y="2.54" length="short"/>
-<pin name="VDD" x="-10.16" y="0" length="short"/>
-<pin name="CLK" x="-10.16" y="-2.54" length="short"/>
-<pin name="VSS" x="-10.16" y="-5.08" length="short"/>
-<pin name="DAT0" x="-10.16" y="-7.62" length="short"/>
-<pin name="DAT1" x="-10.16" y="-10.16" length="short"/>
+<pin name="DAT2" x="-10.16" y="7.62" visible="pin" length="short"/>
+<pin name="CD/DAT3" x="-10.16" y="5.08" visible="pin" length="short"/>
+<pin name="CMD" x="-10.16" y="2.54" visible="pin" length="short"/>
+<pin name="VDD" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="CLK" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="VSS" x="-10.16" y="-5.08" visible="pin" length="short"/>
+<pin name="DAT0" x="-10.16" y="-7.62" visible="pin" length="short"/>
+<pin name="DAT1" x="-10.16" y="-10.16" visible="pin" length="short"/>
 <pin name="P$9" x="17.78" y="7.62" visible="pad" length="short" rot="R180"/>
 <pin name="P$10" x="17.78" y="0" visible="off" length="short" rot="R180"/>
 <wire x1="15.24" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
@@ -365,13 +388,39 @@ DETECT.</text>
 <wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
-<pin name="VBUS" x="-7.62" y="7.62" length="short"/>
-<pin name="D-" x="-7.62" y="5.08" length="short"/>
-<pin name="D+" x="-7.62" y="2.54" length="short"/>
-<pin name="ID" x="-7.62" y="0" length="short"/>
-<pin name="GND" x="-7.62" y="-2.54" length="short"/>
+<pin name="VBUS" x="-7.62" y="7.62" visible="pin" length="short"/>
+<pin name="D-" x="-7.62" y="5.08" visible="pin" length="short"/>
+<pin name="D+" x="-7.62" y="2.54" visible="pin" length="short"/>
+<pin name="ID" x="-7.62" y="0" visible="pin" length="short"/>
+<pin name="GND" x="-7.62" y="-2.54" visible="pin" length="short"/>
 <pin name="P$6" x="-2.54" y="-12.7" visible="off" length="short" rot="R90"/>
 <text x="-3.54" y="-8.62" size="1.6764" layer="95">SHIELD</text>
+</symbol>
+<symbol name="TPS627431YFPR">
+<pin name="VIN" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="EN" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="VSEL1" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="VSEL2" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="VSEL3" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="SW" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="VOS" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+</symbol>
+<symbol name="CRYSTAL">
+<pin name="P1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="P2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+<text x="0.635" y="-4.445" size="1.27" layer="94">GND</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -382,8 +431,8 @@ DETECT.</text>
 <devices>
 <device name="" package="WURTH_SWITCH_SMD">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1 P$3"/>
-<connect gate="G$1" pin="P$2" pad="P$2 P$4"/>
+<connect gate="G$1" pin="P$1" pad="P$1 P$3" route="any"/>
+<connect gate="G$1" pin="P$2" pad="P$2 P$4" route="any"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -550,6 +599,45 @@ DETECT.</text>
 <connect gate="G$1" pin="ID" pad="P$4"/>
 <connect gate="G$1" pin="P$6" pad="MECH1 MECH2 MECH3 MECH4 MECH5 MECH6"/>
 <connect gate="G$1" pin="VBUS" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS627431YFPR">
+<gates>
+<gate name="G$1" symbol="TPS627431YFPR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BGA8">
+<connects>
+<connect gate="G$1" pin="EN" pad="B1"/>
+<connect gate="G$1" pin="GND" pad="B2"/>
+<connect gate="G$1" pin="SW" pad="A1"/>
+<connect gate="G$1" pin="VIN" pad="A2"/>
+<connect gate="G$1" pin="VOS" pad="C2"/>
+<connect gate="G$1" pin="VSEL1" pad="C1"/>
+<connect gate="G$1" pin="VSEL2" pad="D1"/>
+<connect gate="G$1" pin="VSEL3" pad="D2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CX5032SA">
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CRYSTAL_5X3.2">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2 P$4" route="any"/>
+<connect gate="G$1" pin="P1" pad="P$1"/>
+<connect gate="G$1" pin="P2" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
