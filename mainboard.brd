@@ -40,7 +40,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -135,6 +135,8 @@
 <wire x1="85.725" y1="41.448" x2="84.654" y2="40.377" width="0.4064" layer="20" curve="90"/>
 <wire x1="84.654" y1="40.377" x2="84.654" y2="30.732" width="0.4064" layer="20"/>
 <wire x1="84.654" y1="30.732" x2="85.725" y2="29.661" width="0.4064" layer="20" curve="90"/>
+<text x="82.8987" y="3.2765" size="1.778" layer="26" rot="MR0">Giuliano Scaglioni
+Jan 2017</text>
 </plain>
 <libraries>
 <library name="resistor">
@@ -2968,164 +2970,303 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="resistor" package="C0805" value="" x="24.7056" y="4.5914" rot="MR180"/>
-<element name="C10" library="rcl" package="C0603" value="" x="35.8648" y="5.4356" rot="MR180"/>
-<element name="C2" library="resistor" package="C0805" value="" x="17.931" y="7.9342" rot="MR270"/>
-<element name="C3" library="resistor" package="C0805" value="" x="19.933" y="11.145" rot="MR180"/>
-<element name="R1" library="resistor" package="R0402" value="" x="20.8894" y="12.7752" rot="MR0"/>
-<element name="R2" library="resistor" package="R0402" value="" x="23.1666" y="7.305" rot="MR90"/>
-<element name="R3" library="resistor" package="R0402" value="" x="32.3596" y="5.842" rot="MR0"/>
-<element name="U$1" library="lib" package="LQFP64" value="STM32L471RGT6" x="11.2508" y="20.0276" rot="MR270"/>
-<element name="U$2" library="lib" package="DM3AT-SF-PEJM5_MICROSDREADER" value="DM3AT-SF-PEJM5" x="75.8" y="35.6966" rot="MR270"/>
-<element name="U$3" library="lib" package="MOLEX_47346-1001" value="MOLEX_47346-1001" x="77.0984" y="52.2662" rot="MR270"/>
-<element name="U$4" library="lib" package="DFN12L" value="STOD1317BTPUR" x="20.6766" y="7.6868" rot="MR180"/>
-<element name="U$5" library="lib" package="VLS252010HBU" value="VLS252010HBU" x="20.871" y="4.6146" rot="MR0"/>
-<element name="X1" library="con-hirose" package="FH12-24S-0.5SH" value="FH12-24S-0.5SH" x="32" y="10.7" rot="MR180">
+<element name="C1" library="resistor" package="C0805" value="" x="24.7056" y="4.5914" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="23.4356" y="7.1314" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="C10" library="rcl" package="C0603" value="" x="35.8648" y="5.4356" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="35.2298" y="7.3406" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="C2" library="resistor" package="C0805" value="" x="17.931" y="7.9342" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="20.471" y="9.2042" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="C3" library="resistor" package="C0805" value="" x="19.933" y="11.145" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="18.663" y="13.685" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="R1" library="resistor" package="R0402" value="" x="20.8894" y="12.7752" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="21.5244" y="10.8702" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R2" library="resistor" package="R0402" value="" x="23.1666" y="7.305" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="21.2616" y="6.67" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R3" library="resistor" package="R0402" value="" x="32.3596" y="5.842" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="32.9946" y="3.937" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="U$1" library="lib" package="LQFP64" value="STM32L471RGT6" x="11.2508" y="20.0276" smashed="yes" rot="MR270"/>
+<element name="U$2" library="lib" package="DM3AT-SF-PEJM5_MICROSDREADER" value="DM3AT-SF-PEJM5" x="75.8" y="35.6966" smashed="yes" rot="MR270"/>
+<element name="U$3" library="lib" package="MOLEX_47346-1001" value="MOLEX_47346-1001" x="77.0984" y="52.2662" smashed="yes" rot="MR270"/>
+<element name="U$4" library="lib" package="DFN12L" value="STOD1317BTPUR" x="20.6766" y="7.6868" smashed="yes" rot="MR180"/>
+<element name="U$5" library="lib" package="VLS252010HBU" value="VLS252010HBU" x="20.871" y="4.6146" smashed="yes" rot="MR0"/>
+<element name="X1" library="con-hirose" package="FH12-24S-0.5SH" value="FH12-24S-0.5SH" x="32" y="10.7" smashed="yes" rot="MR180">
 <attribute name="OC_FARNELL" value="1324552" x="32" y="10.7" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="FH12-24S-0.5SH(55)" x="32" y="10.7" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="OC_NEWARK" value="34M6170" x="32" y="10.7" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="" x="32" y="10.7" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="25.7524" y="11.0258" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="C4" library="rcl" package="C0603" value="" x="3.1242" y="23.4876" rot="MR270"/>
-<element name="C5" library="rcl" package="C0603" value="" x="14.097" y="12.5402" rot="MR180"/>
-<element name="C6" library="rcl" package="C0603" value="" x="7.7904" y="12.5476" rot="MR180"/>
-<element name="C7" library="rcl" package="C0603" value="" x="21.5392" y="18.1282" rot="MR90"/>
-<element name="C8" library="rcl" package="C0603" value="" x="14.7828" y="27.7294" rot="MR0"/>
-<element name="C9" library="rcl" package="C0603" value="" x="65.6654" y="36.957" rot="MR90"/>
-<element name="BTA1" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="6.5" y="29.5"/>
-<element name="BTA2" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="14.5" y="29.5"/>
-<element name="BTA3" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="22.5" y="29.5"/>
-<element name="BTA4" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="30.5" y="29.5"/>
-<element name="BTA5" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="38.5" y="29.5"/>
-<element name="BTA6" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="46.5" y="29.5"/>
-<element name="BTA7" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="54.5" y="29.5"/>
-<element name="BTA8" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="62.5" y="29.5"/>
-<element name="BTA9" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="70.5" y="29.5"/>
-<element name="BTA10" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="78.5" y="29.5"/>
-<element name="BTB1" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="6.5" y="21.5"/>
-<element name="BTB2" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="14.5" y="21.5"/>
-<element name="BTB3" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="22.5" y="21.5"/>
-<element name="BTB4" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="30.5" y="21.5"/>
-<element name="BTB5" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="38.5" y="21.5"/>
-<element name="BTB6" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="46.5" y="21.5"/>
-<element name="BTB7" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="54.5" y="21.5"/>
-<element name="BTB8" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="62.5" y="21.5"/>
-<element name="BTB9" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="70.5" y="21.5"/>
-<element name="BTB10" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="78.5" y="21.5"/>
-<element name="BTC1" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="6.5" y="13.5"/>
-<element name="BTC2" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="14.5" y="13.5"/>
-<element name="BTC3" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="22.5" y="13.5"/>
-<element name="BTC4" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="30.5" y="13.5"/>
-<element name="BTC5" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="38.5" y="13.5"/>
-<element name="BTC6" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="46.5" y="13.5"/>
-<element name="BTC7" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="54.5" y="13.5"/>
-<element name="BTC8" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="62.5" y="13.5"/>
-<element name="BTC9" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="70.5" y="13.5"/>
-<element name="BTC10" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="78.5" y="13.5"/>
-<element name="BTD1" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="6.5" y="5.5"/>
-<element name="BTD2" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="14.5" y="5.5"/>
-<element name="BTD3" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="22.5" y="5.5"/>
-<element name="BTD4" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="30.5" y="5.5"/>
-<element name="BTD5" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="38.5" y="5.5"/>
-<element name="BTD6" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="46.5" y="5.5"/>
-<element name="BTD7" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="54.5" y="5.5"/>
-<element name="BTD8" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="62.5" y="5.5"/>
-<element name="BTD9" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="70.5" y="5.5"/>
-<element name="BTD10" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="78.5" y="5.5"/>
-<element name="BTA11" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="72.75" y="45.5"/>
-<element name="BTB11" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="67.5" y="43.5" rot="R90"/>
-<element name="BTC11" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="72.75" y="41.5" rot="R180"/>
-<element name="BTD11" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="78" y="43.5" rot="R270"/>
-<element name="DA1" library="diode" package="SOD523" value="" x="6.5" y="31.75"/>
-<element name="DA2" library="diode" package="SOD523" value="" x="14.5" y="31.75"/>
-<element name="DA3" library="diode" package="SOD523" value="" x="22.5" y="31.75"/>
-<element name="DA4" library="diode" package="SOD523" value="" x="30.5" y="31.75"/>
-<element name="DA5" library="diode" package="SOD523" value="" x="38.5" y="31.75"/>
-<element name="DA6" library="diode" package="SOD523" value="" x="46.5" y="31.75"/>
-<element name="DA7" library="diode" package="SOD523" value="" x="54.5" y="31.75"/>
-<element name="DA8" library="diode" package="SOD523" value="" x="62.5" y="31.75"/>
-<element name="DA9" library="diode" package="SOD523" value="" x="70.5" y="31.75"/>
-<element name="DA10" library="diode" package="SOD523" value="" x="78.5" y="31.75"/>
-<element name="DA11" library="diode" package="SOD523" value="" x="72.75" y="47.75"/>
-<element name="DB1" library="diode" package="SOD523" value="" x="6.5" y="23.75"/>
-<element name="DB2" library="diode" package="SOD523" value="" x="14.5" y="23.75"/>
-<element name="DB3" library="diode" package="SOD523" value="" x="22.5" y="23.75"/>
-<element name="DB4" library="diode" package="SOD523" value="" x="30.5" y="23.75"/>
-<element name="DB5" library="diode" package="SOD523" value="" x="38.5" y="23.75"/>
-<element name="DB6" library="diode" package="SOD523" value="" x="46.5" y="23.75"/>
-<element name="DB7" library="diode" package="SOD523" value="" x="54.5" y="23.75"/>
-<element name="DB8" library="diode" package="SOD523" value="" x="62.5" y="23.75"/>
-<element name="DB9" library="diode" package="SOD523" value="" x="70.5" y="23.75"/>
-<element name="DB10" library="diode" package="SOD523" value="" x="78.5" y="23.75"/>
-<element name="DB11" library="diode" package="SOD523" value="" x="65.25" y="43.5" rot="R90"/>
-<element name="DC1" library="diode" package="SOD523" value="" x="6.5" y="15.75"/>
-<element name="DC2" library="diode" package="SOD523" value="" x="14.5" y="15.75"/>
-<element name="DC3" library="diode" package="SOD523" value="" x="22.5" y="15.75"/>
-<element name="DC4" library="diode" package="SOD523" value="" x="30.5" y="15.75"/>
-<element name="DC5" library="diode" package="SOD523" value="" x="38.5" y="15.75"/>
-<element name="DC6" library="diode" package="SOD523" value="" x="46.5" y="15.75"/>
-<element name="DC7" library="diode" package="SOD523" value="" x="54.5" y="15.75"/>
-<element name="DC8" library="diode" package="SOD523" value="" x="62.5" y="15.75"/>
-<element name="DC9" library="diode" package="SOD523" value="" x="70.5" y="15.75"/>
-<element name="DC10" library="diode" package="SOD523" value="" x="78.5" y="15.75"/>
-<element name="DC11" library="diode" package="SOD523" value="" x="72.75" y="39.25" rot="R180"/>
-<element name="DD1" library="diode" package="SOD523" value="" x="6.5" y="7.75"/>
-<element name="DD2" library="diode" package="SOD523" value="" x="14.5" y="7.75"/>
-<element name="DD3" library="diode" package="SOD523" value="" x="22.5" y="7.75"/>
-<element name="DD4" library="diode" package="SOD523" value="" x="30.5" y="7.75"/>
-<element name="DD5" library="diode" package="SOD523" value="" x="38.5" y="7.75"/>
-<element name="DD6" library="diode" package="SOD523" value="" x="46.5" y="7.75"/>
-<element name="DD7" library="diode" package="SOD523" value="" x="54.5" y="7.75"/>
-<element name="DD8" library="diode" package="SOD523" value="" x="62.5" y="7.75"/>
-<element name="DD9" library="diode" package="SOD523" value="" x="70.5" y="7.75"/>
-<element name="DD10" library="diode" package="SOD523" value="" x="78.5" y="7.75"/>
-<element name="DD11" library="diode" package="SOD523" value="" x="80.25" y="43.5" rot="R270"/>
-<element name="X3" library="con-molex" package="87438-02" value="87438-02" x="31.7828" y="2.6722" rot="MR180">
+<element name="C4" library="rcl" package="C0603" value="" x="3.1242" y="23.4876" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="5.0292" y="24.1226" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="C5" library="rcl" package="C0603" value="" x="14.097" y="12.5402" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="13.462" y="14.4452" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="C6" library="rcl" package="C0603" value="" x="7.7904" y="12.5476" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="7.1554" y="14.4526" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="C7" library="rcl" package="C0603" value="" x="21.5392" y="18.1282" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="19.6342" y="17.4932" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="C8" library="rcl" package="C0603" value="" x="14.7828" y="27.7294" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="15.4178" y="25.8244" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="C9" library="rcl" package="C0603" value="" x="65.6654" y="36.957" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="63.7604" y="36.322" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="BTA1" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="6.5" y="29.5" smashed="yes"/>
+<element name="BTA2" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="14.5" y="29.5" smashed="yes"/>
+<element name="BTA3" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="22.5" y="29.5" smashed="yes"/>
+<element name="BTA4" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="30.5" y="29.5" smashed="yes"/>
+<element name="BTA5" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="38.5" y="29.5" smashed="yes"/>
+<element name="BTA6" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="46.5" y="29.5" smashed="yes"/>
+<element name="BTA7" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="54.5" y="29.5" smashed="yes"/>
+<element name="BTA8" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="62.5" y="29.5" smashed="yes"/>
+<element name="BTA9" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="70.5" y="29.5" smashed="yes"/>
+<element name="BTA10" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="78.5" y="29.5" smashed="yes"/>
+<element name="BTB1" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="6.5" y="21.5" smashed="yes"/>
+<element name="BTB2" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="14.5" y="21.5" smashed="yes"/>
+<element name="BTB3" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="22.5" y="21.5" smashed="yes"/>
+<element name="BTB4" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="30.5" y="21.5" smashed="yes"/>
+<element name="BTB5" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="38.5" y="21.5" smashed="yes"/>
+<element name="BTB6" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="46.5" y="21.5" smashed="yes"/>
+<element name="BTB7" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="54.5" y="21.5" smashed="yes"/>
+<element name="BTB8" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="62.5" y="21.5" smashed="yes"/>
+<element name="BTB9" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="70.5" y="21.5" smashed="yes"/>
+<element name="BTB10" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="78.5" y="21.5" smashed="yes"/>
+<element name="BTC1" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="6.5" y="13.5" smashed="yes"/>
+<element name="BTC2" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="14.5" y="13.5" smashed="yes"/>
+<element name="BTC3" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="22.5" y="13.5" smashed="yes"/>
+<element name="BTC4" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="30.5" y="13.5" smashed="yes"/>
+<element name="BTC5" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="38.5" y="13.5" smashed="yes"/>
+<element name="BTC6" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="46.5" y="13.5" smashed="yes"/>
+<element name="BTC7" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="54.5" y="13.5" smashed="yes"/>
+<element name="BTC8" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="62.5" y="13.5" smashed="yes"/>
+<element name="BTC9" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="70.5" y="13.5" smashed="yes"/>
+<element name="BTC10" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="78.5" y="13.5" smashed="yes"/>
+<element name="BTD1" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="6.5" y="5.5" smashed="yes"/>
+<element name="BTD2" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="14.5" y="5.5" smashed="yes"/>
+<element name="BTD3" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="22.5" y="5.5" smashed="yes"/>
+<element name="BTD4" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="30.5" y="5.5" smashed="yes"/>
+<element name="BTD5" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="38.5" y="5.5" smashed="yes"/>
+<element name="BTD6" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="46.5" y="5.5" smashed="yes"/>
+<element name="BTD7" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="54.5" y="5.5" smashed="yes"/>
+<element name="BTD8" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="62.5" y="5.5" smashed="yes"/>
+<element name="BTD9" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="70.5" y="5.5" smashed="yes"/>
+<element name="BTD10" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="78.5" y="5.5" smashed="yes"/>
+<element name="BTA11" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="72.75" y="45.5" smashed="yes"/>
+<element name="BTB11" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="67.5" y="43.5" smashed="yes" rot="R90"/>
+<element name="BTC11" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="72.75" y="41.5" smashed="yes" rot="R180"/>
+<element name="BTD11" library="lib" package="WURTH_SWITCH_SMD" value="WURTH_SWITCH" x="78" y="43.5" smashed="yes" rot="R270"/>
+<element name="DA1" library="diode" package="SOD523" value="" x="6.5" y="31.75" smashed="yes">
+<attribute name="VALUE" x="5.865" y="29.845" size="1.27" layer="27"/>
+</element>
+<element name="DA2" library="diode" package="SOD523" value="" x="14.5" y="31.75" smashed="yes">
+<attribute name="VALUE" x="13.865" y="29.845" size="1.27" layer="27"/>
+</element>
+<element name="DA3" library="diode" package="SOD523" value="" x="22.5" y="31.75" smashed="yes">
+<attribute name="VALUE" x="21.865" y="29.845" size="1.27" layer="27"/>
+</element>
+<element name="DA4" library="diode" package="SOD523" value="" x="30.5" y="31.75" smashed="yes">
+<attribute name="VALUE" x="29.865" y="29.845" size="1.27" layer="27"/>
+</element>
+<element name="DA5" library="diode" package="SOD523" value="" x="38.5" y="31.75" smashed="yes">
+<attribute name="VALUE" x="37.865" y="29.845" size="1.27" layer="27"/>
+</element>
+<element name="DA6" library="diode" package="SOD523" value="" x="46.5" y="31.75" smashed="yes">
+<attribute name="VALUE" x="45.865" y="29.845" size="1.27" layer="27"/>
+</element>
+<element name="DA7" library="diode" package="SOD523" value="" x="54.5" y="31.75" smashed="yes">
+<attribute name="VALUE" x="53.865" y="29.845" size="1.27" layer="27"/>
+</element>
+<element name="DA8" library="diode" package="SOD523" value="" x="62.5" y="31.75" smashed="yes">
+<attribute name="VALUE" x="61.865" y="29.845" size="1.27" layer="27"/>
+</element>
+<element name="DA9" library="diode" package="SOD523" value="" x="70.5" y="31.75" smashed="yes">
+<attribute name="VALUE" x="69.865" y="29.845" size="1.27" layer="27"/>
+</element>
+<element name="DA10" library="diode" package="SOD523" value="" x="78.5" y="31.75" smashed="yes">
+<attribute name="VALUE" x="77.865" y="29.845" size="1.27" layer="27"/>
+</element>
+<element name="DA11" library="diode" package="SOD523" value="" x="72.75" y="47.75" smashed="yes">
+<attribute name="VALUE" x="72.115" y="45.845" size="1.27" layer="27"/>
+</element>
+<element name="DB1" library="diode" package="SOD523" value="" x="6.5" y="23.75" smashed="yes">
+<attribute name="VALUE" x="5.865" y="21.845" size="1.27" layer="27"/>
+</element>
+<element name="DB2" library="diode" package="SOD523" value="" x="14.5" y="23.75" smashed="yes">
+<attribute name="VALUE" x="13.865" y="21.845" size="1.27" layer="27"/>
+</element>
+<element name="DB3" library="diode" package="SOD523" value="" x="22.5" y="23.75" smashed="yes">
+<attribute name="VALUE" x="21.865" y="21.845" size="1.27" layer="27"/>
+</element>
+<element name="DB4" library="diode" package="SOD523" value="" x="30.5" y="23.75" smashed="yes">
+<attribute name="VALUE" x="29.865" y="21.845" size="1.27" layer="27"/>
+</element>
+<element name="DB5" library="diode" package="SOD523" value="" x="38.5" y="23.75" smashed="yes">
+<attribute name="VALUE" x="37.865" y="21.845" size="1.27" layer="27"/>
+</element>
+<element name="DB6" library="diode" package="SOD523" value="" x="46.5" y="23.75" smashed="yes">
+<attribute name="VALUE" x="45.865" y="21.845" size="1.27" layer="27"/>
+</element>
+<element name="DB7" library="diode" package="SOD523" value="" x="54.5" y="23.75" smashed="yes">
+<attribute name="VALUE" x="53.865" y="21.845" size="1.27" layer="27"/>
+</element>
+<element name="DB8" library="diode" package="SOD523" value="" x="62.5" y="23.75" smashed="yes">
+<attribute name="VALUE" x="61.865" y="21.845" size="1.27" layer="27"/>
+</element>
+<element name="DB9" library="diode" package="SOD523" value="" x="70.5" y="23.75" smashed="yes">
+<attribute name="VALUE" x="69.865" y="21.845" size="1.27" layer="27"/>
+</element>
+<element name="DB10" library="diode" package="SOD523" value="" x="78.5" y="23.75" smashed="yes">
+<attribute name="VALUE" x="77.865" y="21.845" size="1.27" layer="27"/>
+</element>
+<element name="DB11" library="diode" package="SOD523" value="" x="65.25" y="43.5" smashed="yes" rot="R90">
+<attribute name="VALUE" x="67.155" y="42.865" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="DC1" library="diode" package="SOD523" value="" x="6.5" y="15.75" smashed="yes">
+<attribute name="VALUE" x="5.865" y="13.845" size="1.27" layer="27"/>
+</element>
+<element name="DC2" library="diode" package="SOD523" value="" x="14.5" y="15.75" smashed="yes">
+<attribute name="VALUE" x="13.865" y="13.845" size="1.27" layer="27"/>
+</element>
+<element name="DC3" library="diode" package="SOD523" value="" x="22.5" y="15.75" smashed="yes">
+<attribute name="VALUE" x="21.865" y="13.845" size="1.27" layer="27"/>
+</element>
+<element name="DC4" library="diode" package="SOD523" value="" x="30.5" y="15.75" smashed="yes">
+<attribute name="VALUE" x="29.865" y="13.845" size="1.27" layer="27"/>
+</element>
+<element name="DC5" library="diode" package="SOD523" value="" x="38.5" y="15.75" smashed="yes">
+<attribute name="VALUE" x="37.865" y="13.845" size="1.27" layer="27"/>
+</element>
+<element name="DC6" library="diode" package="SOD523" value="" x="46.5" y="15.75" smashed="yes">
+<attribute name="VALUE" x="45.865" y="13.845" size="1.27" layer="27"/>
+</element>
+<element name="DC7" library="diode" package="SOD523" value="" x="54.5" y="15.75" smashed="yes">
+<attribute name="VALUE" x="53.865" y="13.845" size="1.27" layer="27"/>
+</element>
+<element name="DC8" library="diode" package="SOD523" value="" x="62.5" y="15.75" smashed="yes">
+<attribute name="VALUE" x="61.865" y="13.845" size="1.27" layer="27"/>
+</element>
+<element name="DC9" library="diode" package="SOD523" value="" x="70.5" y="15.75" smashed="yes">
+<attribute name="VALUE" x="69.865" y="13.845" size="1.27" layer="27"/>
+</element>
+<element name="DC10" library="diode" package="SOD523" value="" x="78.5" y="15.75" smashed="yes">
+<attribute name="VALUE" x="77.865" y="13.845" size="1.27" layer="27"/>
+</element>
+<element name="DC11" library="diode" package="SOD523" value="" x="72.75" y="39.25" smashed="yes" rot="R180">
+<attribute name="VALUE" x="73.385" y="41.155" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="DD1" library="diode" package="SOD523" value="" x="6.5" y="7.75" smashed="yes">
+<attribute name="VALUE" x="5.865" y="5.845" size="1.27" layer="27"/>
+</element>
+<element name="DD2" library="diode" package="SOD523" value="" x="14.5" y="7.75" smashed="yes">
+<attribute name="VALUE" x="13.865" y="5.845" size="1.27" layer="27"/>
+</element>
+<element name="DD3" library="diode" package="SOD523" value="" x="22.5" y="7.75" smashed="yes">
+<attribute name="VALUE" x="21.865" y="5.845" size="1.27" layer="27"/>
+</element>
+<element name="DD4" library="diode" package="SOD523" value="" x="30.5" y="7.75" smashed="yes">
+<attribute name="VALUE" x="29.865" y="5.845" size="1.27" layer="27"/>
+</element>
+<element name="DD5" library="diode" package="SOD523" value="" x="38.5" y="7.75" smashed="yes">
+<attribute name="VALUE" x="37.865" y="5.845" size="1.27" layer="27"/>
+</element>
+<element name="DD6" library="diode" package="SOD523" value="" x="46.5" y="7.75" smashed="yes">
+<attribute name="VALUE" x="45.865" y="5.845" size="1.27" layer="27"/>
+</element>
+<element name="DD7" library="diode" package="SOD523" value="" x="54.5" y="7.75" smashed="yes">
+<attribute name="VALUE" x="53.865" y="5.845" size="1.27" layer="27"/>
+</element>
+<element name="DD8" library="diode" package="SOD523" value="" x="62.5" y="7.75" smashed="yes">
+<attribute name="VALUE" x="61.865" y="5.845" size="1.27" layer="27"/>
+</element>
+<element name="DD9" library="diode" package="SOD523" value="" x="70.5" y="7.75" smashed="yes">
+<attribute name="VALUE" x="69.865" y="5.845" size="1.27" layer="27"/>
+</element>
+<element name="DD10" library="diode" package="SOD523" value="" x="78.5" y="7.75" smashed="yes">
+<attribute name="VALUE" x="77.865" y="5.845" size="1.27" layer="27"/>
+</element>
+<element name="DD11" library="diode" package="SOD523" value="" x="80.25" y="43.5" smashed="yes" rot="R270">
+<attribute name="VALUE" x="78.345" y="44.135" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="X3" library="con-molex" package="87438-02" value="87438-02" x="31.7828" y="2.6722" smashed="yes" rot="MR180">
 <attribute name="MPN" value="" x="31.7828" y="2.6722" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="OC_FARNELL" value="1711327" x="31.7828" y="2.6722" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="31.7828" y="2.6722" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="" x="31.7828" y="2.6722" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="28.0328" y="6.4222" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="U$6" library="lib" package="BGA8" value="TPS627431YFPR" x="13.4112" y="8.6106" rot="MR270"/>
-<element name="L1" library="rcl" package="L2012C" value="" x="11.4046" y="8.4582" rot="MR90"/>
-<element name="C11" library="rcl" package="C0603" value="" x="15.5194" y="7.7978" rot="MR90"/>
-<element name="C12" library="rcl" package="C0603" value="" x="14.0462" y="10.4394" rot="MR180"/>
-<element name="U$7" library="lib" package="CRYSTAL_5X3.2" value="CX5032SA" x="22.7076" y="24.3332" rot="MR270"/>
-<element name="C13" library="eagle-ltspice" package="C0603" value="" x="22.733" y="27.9654" rot="MR0">
+<element name="U$6" library="lib" package="BGA8" value="TPS627431YFPR" x="13.4112" y="8.6106" smashed="yes" rot="MR270"/>
+<element name="L1" library="rcl" package="L2012C" value="" x="11.4046" y="8.4582" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="8.8646" y="6.5532" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="C11" library="rcl" package="C0603" value="" x="15.5194" y="7.7978" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="13.6144" y="7.1628" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="C12" library="rcl" package="C0603" value="" x="14.0462" y="10.4394" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="13.4112" y="12.3444" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="U$7" library="lib" package="CRYSTAL_5X3.2" value="CX5032SA" x="22.7076" y="24.3332" smashed="yes" rot="MR270"/>
+<element name="C13" library="eagle-ltspice" package="C0603" value="" x="22.733" y="27.9654" smashed="yes" rot="MR0">
 <attribute name="SPICEMODEL" value="NONE" x="22.733" y="27.9654" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="22.733" y="27.9654" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VALUE" x="23.368" y="26.0604" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C14" library="eagle-ltspice" package="C0603" value="" x="22.6314" y="20.6756" rot="MR180">
+<element name="C14" library="eagle-ltspice" package="C0603" value="" x="22.6314" y="20.6756" smashed="yes" rot="MR180">
 <attribute name="SPICEMODEL" value="NONE" x="22.6314" y="20.6756" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="22.6314" y="20.6756" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="21.9964" y="22.5806" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="TP1" library="testpad" package="TP20SQ" value="TPTP20SQ" x="15.24" y="30.48" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="15.24" y="30.48" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="TP1" library="testpad" package="TP20SQ" value="TPTP20SQ" x="15.24" y="30.48" smashed="yes" rot="MR0">
+<attribute name="TP_SIGNAL_NAME" value="" x="15.24" y="27.94" size="1" layer="38" rot="MR0"/>
+<attribute name="VALUE" x="16.256" y="29.337" size="0.0254" layer="28" rot="MR0"/>
 </element>
-<element name="TP2" library="testpad" package="TP20SQ" value="TPTP20SQ" x="15.24" y="33.02" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="15.24" y="33.02" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="TP2" library="testpad" package="TP20SQ" value="TPTP20SQ" x="15.24" y="33.02" smashed="yes" rot="MR0">
+<attribute name="TP_SIGNAL_NAME" value="" x="15.24" y="30.48" size="1" layer="38" rot="MR0"/>
+<attribute name="VALUE" x="16.256" y="31.877" size="0.0254" layer="28" rot="MR0"/>
 </element>
-<element name="TP3" library="testpad" package="TP20SQ" value="TPTP20SQ" x="12.7" y="30.48" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="12.7" y="30.48" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="TP3" library="testpad" package="TP20SQ" value="TPTP20SQ" x="12.7" y="30.48" smashed="yes" rot="MR0">
+<attribute name="TP_SIGNAL_NAME" value="" x="12.7" y="27.94" size="1" layer="38" rot="MR0"/>
+<attribute name="VALUE" x="13.716" y="29.337" size="0.0254" layer="28" rot="MR0"/>
 </element>
-<element name="TP4" library="testpad" package="TP20SQ" value="TPTP20SQ" x="12.7" y="33.02" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="12.7" y="33.02" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="TP4" library="testpad" package="TP20SQ" value="TPTP20SQ" x="12.7" y="33.02" smashed="yes" rot="MR0">
+<attribute name="TP_SIGNAL_NAME" value="" x="12.7" y="30.48" size="1" layer="38" rot="MR0"/>
+<attribute name="VALUE" x="13.716" y="31.877" size="0.0254" layer="28" rot="MR0"/>
 </element>
-<element name="TP5" library="testpad" package="TP20SQ" value="TPTP20SQ" x="10.16" y="30.48" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="10.16" y="30.48" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="TP5" library="testpad" package="TP20SQ" value="TPTP20SQ" x="10.16" y="30.48" smashed="yes" rot="MR0">
+<attribute name="TP_SIGNAL_NAME" value="" x="10.16" y="27.94" size="1" layer="38" rot="MR0"/>
+<attribute name="VALUE" x="11.176" y="29.337" size="0.0254" layer="28" rot="MR0"/>
 </element>
-<element name="TP6" library="testpad" package="TP20SQ" value="TPTP20SQ" x="10.16" y="33.02" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="10.16" y="33.02" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="TP6" library="testpad" package="TP20SQ" value="TPTP20SQ" x="10.16" y="33.02" smashed="yes" rot="MR0">
+<attribute name="TP_SIGNAL_NAME" value="" x="10.16" y="30.48" size="1" layer="38" rot="MR0"/>
+<attribute name="VALUE" x="11.176" y="31.877" size="0.0254" layer="28" rot="MR0"/>
 </element>
-<element name="U$8" library="lib" package="6-SOT-23" value="BQ21040DBVR" x="68.4022" y="46.101" rot="MR270"/>
-<element name="R4" library="resistor" package="R0402" value="1k" x="65.151" y="46.7614" rot="MR90"/>
-<element name="R5" library="resistor" package="R0402" value="10k" x="71.2724" y="47.752" rot="MR90"/>
-<element name="C15" library="rcl" package="C0603" value="" x="68.1482" y="49.0474" rot="MR0"/>
-<element name="C16" library="rcl" package="C0603" value="" x="73.406" y="45.3898" rot="MR90"/>
-<element name="U$9" library="lib" package="ALPS_SSSS810701" value="ALPS_SSSS810701" x="9.4612" y="3.1296" rot="MR0"/>
-<element name="C17" library="eagle-ltspice" package="C1206" value="" x="7.0534" y="8.7708" rot="MR0">
+<element name="U$8" library="lib" package="6-SOT-23" value="BQ21040DBVR" x="68.4022" y="46.101" smashed="yes" rot="MR270"/>
+<element name="R4" library="resistor" package="R0402" value="1k" x="65.151" y="46.7614" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="63.246" y="46.1264" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R5" library="resistor" package="R0402" value="10k" x="71.2724" y="47.752" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="69.3674" y="47.117" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="C15" library="rcl" package="C0603" value="" x="68.1482" y="49.0474" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="68.7832" y="47.1424" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="C16" library="rcl" package="C0603" value="" x="73.406" y="45.3898" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="71.501" y="44.7548" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="U$9" library="lib" package="ALPS_SSSS810701" value="ALPS_SSSS810701" x="9.4612" y="3.1296" smashed="yes" rot="MR0"/>
+<element name="C17" library="eagle-ltspice" package="C1206" value="" x="7.0534" y="8.7708" smashed="yes" rot="MR0">
 <attribute name="SPICEPREFIX" value="C" x="7.0534" y="8.7708" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="SPICEMODEL" value="NONE" x="7.0534" y="8.7708" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="VALUE" x="8.3234" y="6.2308" size="1.27" layer="28" rot="MR0"/>
 </element>
 </elements>
 <signals>
@@ -5036,4 +5177,10 @@ Please make sure your boards conform to these design rules.</description>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
