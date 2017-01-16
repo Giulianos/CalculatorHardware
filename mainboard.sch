@@ -15467,20 +15467,21 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="U$9" library="lib" deviceset="ALPS_SSSS810701" device=""/>
 <part name="C17" library="eagle-ltspice" deviceset="C" device="C1206"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="R6" library="resistor" deviceset="R-US_" device="R0402"/>
+<part name="R7" library="resistor" deviceset="R-US_" device="R0402"/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="P+6" library="supply1" deviceset="VCC" device=""/>
+<part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
+<part name="R8" library="resistor" deviceset="R-US_" device="R0402"/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="R9" library="resistor" deviceset="R-US_" device="R0402"/>
+<part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="R10" library="resistor" deviceset="R-US_" device="R0402"/>
+<part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="170.18" y="66.04" size="5.08" layer="97">ToDo:
-Crystal Oscilator --
-USB Charging--
-Matrix Connection --
-PWR Switch
-JTAG Header--</text>
-<wire x1="162.56" y1="114.3" x2="243.84" y2="114.3" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="243.84" y1="114.3" x2="243.84" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="243.84" y1="63.5" x2="162.56" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="162.56" y1="63.5" x2="162.56" y2="114.3" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="43.18" y="180.34"/>
@@ -15661,9 +15662,20 @@ JTAG Header--</text>
 <instance part="U$9" gate="G$1" x="0" y="165.1" rot="R180"/>
 <instance part="C17" gate="G$1" x="-12.7" y="162.56"/>
 <instance part="GND12" gate="1" x="-12.7" y="154.94"/>
+<instance part="R6" gate="G$1" x="5.08" y="104.14" rot="R90"/>
+<instance part="R7" gate="G$1" x="5.08" y="88.9" rot="R90"/>
+<instance part="GND13" gate="1" x="5.08" y="81.28"/>
+<instance part="P+6" gate="VCC" x="5.08" y="111.76"/>
+<instance part="+3V4" gate="G$1" x="147.32" y="78.74"/>
+<instance part="R8" gate="G$1" x="149.86" y="63.5" rot="R180"/>
+<instance part="GND14" gate="1" x="157.48" y="58.42"/>
+<instance part="R9" gate="G$1" x="15.24" y="86.36" rot="R90"/>
+<instance part="GND15" gate="1" x="15.24" y="78.74"/>
+<instance part="R10" gate="G$1" x="15.24" y="114.3" rot="R90"/>
+<instance part="+3V5" gate="G$1" x="15.24" y="121.92"/>
 </instances>
 <busses>
-<bus name="SD_CLK,SD_CMD,SD_DAT[0..3],+3V3,GND,SPI_CS,SPI_SCK,SPI_MISO,SPI_MOSI,VCC/2,PA[0..15],PB[0..15],PC[0..15],BOOT0,NRST">
+<bus name="SD_CLK,SD_CMD,SD_DAT[0..3],+3V3,GND,SPI_CS,SPI_SCK,SPI_MISO,SPI_MOSI,VCC/2,PA[0..15],PB[0..15],PC[0..15],BOOT0,NRST,BAT_SENS,SD_SWITCH">
 <segment>
 <wire x1="27.94" y1="134.62" x2="27.94" y2="50.8" width="0.762" layer="92"/>
 <wire x1="27.94" y1="50.8" x2="60.96" y2="50.8" width="0.762" layer="92"/>
@@ -15874,6 +15886,20 @@ JTAG Header--</text>
 <pinref part="C17" gate="G$1" pin="2"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="154.94" y1="63.5" x2="157.48" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="63.5" x2="157.48" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -15943,6 +15969,16 @@ JTAG Header--</text>
 <pinref part="TP1" gate="G$1" pin="TP"/>
 <wire x1="71.12" y1="134.62" x2="60.96" y2="134.62" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="P$9"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+<wire x1="142.24" y1="71.12" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="71.12" x2="147.32" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="+3V5" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -15995,6 +16031,10 @@ JTAG Header--</text>
 <pinref part="U$9" gate="G$1" pin="L"/>
 <wire x1="-10.16" y1="167.64" x2="-5.08" y2="167.64" width="0.1524" layer="91"/>
 <junction x="-10.16" y="167.64"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -16873,11 +16913,19 @@ JTAG Header--</text>
 <pinref part="TP2" gate="G$1" pin="TP"/>
 <wire x1="73.66" y1="132.08" x2="60.96" y2="132.08" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$2" pin="PA13"/>
+<wire x1="55.88" y1="119.38" x2="60.96" y2="119.38" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="PA14" class="0">
 <segment>
 <pinref part="TP3" gate="G$1" pin="TP"/>
 <wire x1="76.2" y1="129.54" x2="60.96" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$2" pin="PA14"/>
+<wire x1="55.88" y1="121.92" x2="60.96" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BOOT0" class="0">
@@ -16889,6 +16937,11 @@ JTAG Header--</text>
 <pinref part="TP5" gate="G$1" pin="TP"/>
 <wire x1="81.28" y1="124.46" x2="60.96" y2="124.46" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="91.44" x2="15.24" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="101.6" x2="27.94" y2="101.6" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="NRST" class="0">
 <segment>
@@ -16898,6 +16951,11 @@ JTAG Header--</text>
 <segment>
 <pinref part="TP6" gate="G$1" pin="TP"/>
 <wire x1="83.82" y1="121.92" x2="60.96" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="109.22" x2="15.24" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="106.68" x2="27.94" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$54" class="0">
@@ -16944,6 +17002,37 @@ JTAG Header--</text>
 <pinref part="U$9" gate="G$1" pin="COM"/>
 <wire x1="5.08" y1="165.1" x2="10.16" y2="165.1" width="0.1524" layer="91"/>
 <junction x="10.16" y="165.1"/>
+</segment>
+</net>
+<net name="BAT_SENS" class="0">
+<segment>
+<pinref part="U$1" gate="G$4" pin="PC5"/>
+<wire x1="33.02" y1="60.96" x2="27.94" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="27.94" y1="104.14" x2="12.7" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="104.14" x2="12.7" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="99.06" x2="5.08" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="96.52" x2="5.08" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="96.52" x2="5.08" y2="96.52" width="0.1524" layer="91"/>
+<junction x="5.08" y="96.52"/>
+</segment>
+</net>
+<net name="SD_SWITCH" class="0">
+<segment>
+<pinref part="U$1" gate="G$2" pin="PA15"/>
+<wire x1="55.88" y1="124.46" x2="60.96" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="101.6" y1="48.26" x2="144.78" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="48.26" x2="144.78" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="P$10"/>
+<wire x1="144.78" y1="63.5" x2="142.24" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<junction x="144.78" y="63.5"/>
+<wire x1="99.06" y1="50.8" x2="101.6" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
