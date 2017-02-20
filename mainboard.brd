@@ -2971,16 +2971,16 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="resistor" package="C0805" value="" x="24.6294" y="3.7024" smashed="yes" rot="MR180">
+<element name="C1" library="resistor" package="C0805" value="10uF" x="24.6294" y="3.7024" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="23.3594" y="6.2424" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="C10" library="rcl" package="C0603" value="" x="35.8648" y="5.4356" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="35.2298" y="7.3406" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="C2" library="resistor" package="C0805" value="" x="17.931" y="7.9342" smashed="yes" rot="MR270">
+<element name="C2" library="resistor" package="C0805" value="4.7uF" x="17.931" y="7.9342" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="20.471" y="9.2042" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="C3" library="resistor" package="C0805" value="" x="20.3394" y="10.9926" smashed="yes" rot="MR180">
+<element name="C3" library="resistor" package="C0805" value="4.7uF" x="20.3394" y="10.9926" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="19.0694" y="13.5326" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="R1" library="resistor" package="R0402" value="" x="21.0672" y="12.953" smashed="yes" rot="MR0">
@@ -3205,13 +3205,13 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="28.0328" y="6.4222" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="U$6" library="lib" package="BGA8" value="TPS627431YFPR" x="3.175" y="7.0358" smashed="yes" rot="MR270"/>
-<element name="L1" library="rcl" package="L2012C" value="" x="3.048" y="4.318" smashed="yes" rot="MR0">
+<element name="L1" library="rcl" package="L2012C" value="2.2uH" x="3.048" y="4.318" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="4.953" y="1.778" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C11" library="rcl" package="C0603" value="" x="6.096" y="8.4836" smashed="yes" rot="MR90">
+<element name="C11" library="rcl" package="C0603" value="4.7uF" x="6.096" y="8.4836" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="4.191" y="7.8486" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="C12" library="rcl" package="C0603" value="" x="3.302" y="9.9822" smashed="yes" rot="MR180">
+<element name="C12" library="rcl" package="C0603" value="10uF" x="3.302" y="9.9822" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="2.667" y="11.8872" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="U$7" library="lib" package="CRYSTAL_5X3.2" value="CX5032SA" x="22.7076" y="24.3332" smashed="yes" rot="MR270"/>
@@ -3250,12 +3250,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="8.509" y="33.8074" size="0.0254" layer="28" rot="MR0"/>
 </element>
 <element name="U$8" library="lib" package="6-SOT-23" value="BQ21040DBVR" x="68.4022" y="46.101" smashed="yes" rot="MR270"/>
-<element name="R4" library="resistor" package="R0402" value="1k" x="65.151" y="46.7614" smashed="yes" rot="MR90"/>
+<element name="R4" library="resistor" package="R0402" value="&lt;=1.2k" x="65.151" y="46.7614" smashed="yes" rot="MR90"/>
 <element name="R5" library="resistor" package="R0402" value="10k" x="71.2724" y="47.752" smashed="yes" rot="MR90"/>
-<element name="C15" library="rcl" package="C0603" value="" x="68.1482" y="49.0474" smashed="yes" rot="MR0">
+<element name="C15" library="rcl" package="C0603" value="1uF" x="68.1482" y="49.0474" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="68.7832" y="47.1424" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C16" library="rcl" package="C0603" value="" x="73.406" y="45.3898" smashed="yes" rot="MR90">
+<element name="C16" library="rcl" package="C0603" value="1uF" x="73.406" y="45.3898" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="71.501" y="44.7548" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="U$9" library="lib" package="ALPS_SSSS810701" value="ALPS_SSSS810701" x="9.4612" y="3.1296" smashed="yes" rot="MR0"/>
@@ -3315,9 +3315,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C8" pad="2"/>
 <contactref element="C9" pad="2"/>
 <contactref element="X3" pad="2"/>
-<contactref element="C11" pad="2"/>
-<contactref element="C12" pad="2"/>
-<contactref element="U$6" pad="B2"/>
 <contactref element="U$7" pad="P$2" route="any" routetag="G$1.GND"/>
 <contactref element="U$7" pad="P$4" route="any" routetag="G$1.GND"/>
 <contactref element="C13" pad="2"/>
@@ -3568,16 +3565,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="3.3528" y1="9.144" x2="3.3528" y2="8.8392" width="0.1524" layer="16"/>
 <wire x1="3.3528" y1="8.8392" x2="3.3528" y2="7.3152" width="0.1524" layer="16"/>
 <wire x1="4.1148" y1="9.906" x2="3.3528" y2="9.144" width="0.1524" layer="16"/>
-<wire x1="3.3528" y1="7.3152" x2="3.375" y2="7.2358" width="0.1524" layer="16"/>
-<wire x1="4.1148" y1="9.906" x2="4.152" y2="9.9822" width="0.1524" layer="16"/>
 <wire x1="7.1628" y1="8.2296" x2="10.0584" y2="8.2296" width="0.1524" layer="16"/>
 <wire x1="6.096" y1="9.2964" x2="7.1628" y2="8.2296" width="0.1524" layer="16"/>
 <wire x1="10.0584" y1="8.2296" x2="10.0705" y2="8.2951" width="0.1524" layer="16"/>
-<wire x1="6.096" y1="9.2964" x2="6.096" y2="9.3336" width="0.1524" layer="16"/>
 <wire x1="5.6388" y1="9.906" x2="4.2672" y2="9.906" width="0.1524" layer="16"/>
 <wire x1="6.096" y1="9.4488" x2="5.6388" y2="9.906" width="0.1524" layer="16"/>
-<wire x1="4.2672" y1="9.906" x2="4.152" y2="9.9822" width="0.1524" layer="16"/>
-<wire x1="6.096" y1="9.4488" x2="6.096" y2="9.3336" width="0.1524" layer="16"/>
 <wire x1="7.4676" y1="11.7348" x2="7.4676" y2="12.3444" width="0.1524" layer="16"/>
 <wire x1="5.6388" y1="9.906" x2="7.4676" y2="11.7348" width="0.1524" layer="16"/>
 <wire x1="7.4676" y1="12.3444" x2="7.4974" y2="12.3952" width="0.1524" layer="16"/>
@@ -3677,6 +3669,9 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="12.1412" y="2.0066"/>
 <vertex x="6.985" y="2.0066"/>
 </polygon>
+<contactref element="C11" pad="2"/>
+<contactref element="C12" pad="2"/>
+<contactref element="U$6" pad="B2"/>
 </signal>
 <signal name="+3V3">
 <contactref element="U$1" pad="P$1"/>
