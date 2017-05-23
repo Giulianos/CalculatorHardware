@@ -1,17 +1,17 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/giulianoscaglioni/CalculatorHardware/mainboard.brd
+Job           : /home/giuliano/Calculadoras/CustomCalc/CalculatorHardware/mainboard.brd
 
-Start at      : 15:46:22 (22/5/17)
-End at        : 21:00:00 (31/12/69)
+Start at      : 03:54:03 (5/23/17)
+End at        : 21:00:00 (12/31/69)
 Elapsed time  : 00:00:00
 
 Signals       :    95   RoutingGrid: 6 mil  Layers: 2
-Connections   :   353   predefined:  353 ( 111 Vias )
+Connections   :   354   predefined:  353 ( 127 Vias )
 
-Router memory :   0
+Router memory :   866852
 
-Passname          :          
+Passname          : TopRouter
 
 Time per pass     :  00:00:00
 Number of Ripups  :         0
@@ -20,6 +20,6 @@ max. Total        :         0
 
 Routed            :         0
 Vias              :         0
-Resolution        :   100.0 %
+Resolution        :    99.7 %
 
 Final             : 

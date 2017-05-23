@@ -9,20 +9,6 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -195,7 +181,7 @@
 <wire x1="3.3" y1="3.9" x2="3.3" y2="3.5" width="0.127" layer="21"/>
 </package>
 <package name="DFN12L">
-<smd name="TERM" x="0" y="0" dx="2.12" dy="1.31" layer="1" cream="no"/>
+<smd name="TERM" x="0" y="0" dx="2.12" dy="1.31" layer="1"/>
 <smd name="P3" x="-0.225" y="-1.3" dx="0.28" dy="0.5" layer="1"/>
 <smd name="P2" x="-0.675" y="-1.3" dx="0.28" dy="0.5" layer="1"/>
 <smd name="P1" x="-1.125" y="-1.3" dx="0.28" dy="0.5" layer="1"/>
@@ -211,8 +197,6 @@
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="-1.1" y1="-1.8" x2="-1.1" y2="-2" width="0.127" layer="21"/>
-<rectangle x1="-0.9652" y1="-0.5588" x2="-0.2286" y2="0.5842" layer="31"/>
-<rectangle x1="0.2286" y1="-0.5588" x2="0.9652" y2="0.5842" layer="31"/>
 </package>
 <package name="VLS252010HBU">
 <smd name="P$1" x="-0.95" y="0" dx="0.6" dy="2" layer="1"/>
@@ -745,7 +729,7 @@ DETECT.</text>
 </deviceset>
 </devicesets>
 </library>
-<library name="supply1" urn="urn:adsk.eagle:library:371">
+<library name="supply1">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
  Please keep in mind, that these devices are necessary for the
@@ -857,7 +841,7 @@ DETECT.</text>
 </deviceset>
 </devicesets>
 </library>
-<library name="resistor" urn="urn:adsk.eagle:library:348">
+<library name="resistor">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
 &lt;ul&gt;
@@ -6572,7 +6556,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-hirose" urn="urn:adsk.eagle:library:152">
+<library name="con-hirose">
 <description>&lt;b&gt;Hirose Connectors&lt;/b&gt;&lt;p&gt;
 www.hirose.co.jp&lt;p&gt;
 Include : &lt;br&gt;
@@ -6810,7 +6794,7 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 </deviceset>
 </devicesets>
 </library>
-<library name="rcl" urn="urn:adsk.eagle:library:334">
+<library name="rcl">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
 &lt;ul&gt;
@@ -11957,7 +11941,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="diode" urn="urn:adsk.eagle:library:210">
+<library name="diode">
 <description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
 Based on the following sources:
 &lt;ul&gt;
@@ -14018,7 +14002,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="eagle-ltspice" urn="urn:adsk.eagle:library:217">
+<library name="eagle-ltspice">
 <description>Default symbols for import LTspice schematics&lt;p&gt;
 2012-10-29 alf@cadsoft.de&lt;br&gt;</description>
 <packages>
@@ -14730,7 +14714,7 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="testpad" urn="urn:adsk.eagle:library:385">
+<library name="testpad">
 <description>&lt;b&gt;Test Pins/Pads&lt;/b&gt;&lt;p&gt;
 Cream on SMD OFF.&lt;br&gt;
 new: Attribute TP_SIGNAL_NAME&lt;br&gt;
@@ -15422,7 +15406,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="frames" urn="urn:adsk.eagle:library:229">
+<library name="frames">
 <description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
 <packages>
 </packages>
@@ -15480,37 +15464,37 @@ DIN A4, landscape with location and doc. field</description>
 </classes>
 <parts>
 <part name="U$1" library="lib" deviceset="STM32L471RGT6" device=""/>
-<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="U$2" library="lib" deviceset="DM3AT-SF-PEJM5" device=""/>
 <part name="U$3" library="lib" deviceset="MOLEX_47346-1001" device=""/>
 <part name="U$4" library="lib" deviceset="STOD1317BTPUR" device=""/>
 <part name="U$5" library="lib" deviceset="VLS252010HBU" device=""/>
-<part name="C1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" value="10uF"/>
-<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" value="4.7uF"/>
-<part name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" value="4.7uF"/>
-<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC/2" device=""/>
-<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402"/>
-<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402"/>
-<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="X1" library="con-hirose" library_urn="urn:adsk.eagle:library:152" deviceset="FH12-24S-0.5S" device="H"/>
-<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402"/>
-<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603"/>
-<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC/2" device=""/>
-<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603"/>
-<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603"/>
-<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603"/>
-<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603"/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603"/>
-<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603"/>
+<part name="C1" library="resistor" deviceset="C-EU" device="C0805" value="10uF"/>
+<part name="P+1" library="supply1" deviceset="VCC" device=""/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="C2" library="resistor" deviceset="C-EU" device="C0805" value="4.7uF"/>
+<part name="C3" library="resistor" deviceset="C-EU" device="C0805" value="4.7uF"/>
+<part name="GND4" library="supply1" deviceset="GND" device=""/>
+<part name="P+2" library="supply1" deviceset="VCC/2" device=""/>
+<part name="R1" library="resistor" deviceset="R-US_" device="R0402"/>
+<part name="R2" library="resistor" deviceset="R-US_" device="R0402"/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="X1" library="con-hirose" deviceset="FH12-24S-0.5S" device="H"/>
+<part name="R3" library="resistor" deviceset="R-US_" device="R0402"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="P+3" library="supply1" deviceset="VCC/2" device=""/>
+<part name="P+4" library="supply1" deviceset="VCC" device=""/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C8" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0603"/>
 <part name="BTA1" library="lib" deviceset="WURTH_SWITCH" device=""/>
 <part name="BTA2" library="lib" deviceset="WURTH_SWITCH" device=""/>
 <part name="BTA3" library="lib" deviceset="WURTH_SWITCH" device=""/>
@@ -15555,99 +15539,99 @@ DIN A4, landscape with location and doc. field</description>
 <part name="BTB11" library="lib" deviceset="WURTH_SWITCH" device=""/>
 <part name="BTC11" library="lib" deviceset="WURTH_SWITCH" device=""/>
 <part name="BTD11" library="lib" deviceset="WURTH_SWITCH" device=""/>
-<part name="DA1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DA2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DA3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DA4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DA5" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DA6" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DA7" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DA8" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DA9" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DA10" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DA11" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DB1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DB2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DB3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DB4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DB5" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DB6" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DB7" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DB8" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DB9" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DB10" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DB11" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DC1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DC2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DC3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DC4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DC5" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DC6" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DC7" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DC8" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DC9" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DC10" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DC11" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DD1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DD2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DD3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DD4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DD5" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DD6" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DD7" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DD8" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DD9" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DD10" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
-<part name="DD11" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD523"/>
+<part name="DA1" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DA2" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DA3" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DA4" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DA5" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DA6" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DA7" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DA8" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DA9" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DA10" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DA11" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DB1" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DB2" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DB3" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DB4" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DB5" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DB6" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DB7" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DB8" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DB9" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DB10" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DB11" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DC1" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DC2" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DC3" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DC4" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DC5" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DC6" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DC7" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DC8" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DC9" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DC10" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DC11" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DD1" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DD2" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DD3" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DD4" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DD5" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DD6" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DD7" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DD8" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DD9" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DD10" library="diode" deviceset="DIODE-" device="SOD523"/>
+<part name="DD11" library="diode" deviceset="DIODE-" device="SOD523"/>
 <part name="U$6" library="lib" deviceset="TPS627431YFPR" device=""/>
-<part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="L1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-US" device="L2012C" value="2.2uH"/>
-<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" value="4.7uF"/>
-<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" value="10uF"/>
-<part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+5" library="supply1" deviceset="VCC" device=""/>
+<part name="L1" library="rcl" deviceset="L-US" device="L2012C" value="2.2uH"/>
+<part name="C11" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF"/>
+<part name="C12" library="rcl" deviceset="C-EU" device="C0603" value="10uF"/>
+<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="U$7" library="lib" deviceset="CX5032SA" device=""/>
-<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C13" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603"/>
-<part name="C14" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C0603"/>
-<part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ"/>
-<part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ"/>
-<part name="TP3" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ"/>
-<part name="TP4" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ"/>
-<part name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ"/>
-<part name="TP6" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ"/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="C13" library="eagle-ltspice" deviceset="C" device="C0603"/>
+<part name="C14" library="eagle-ltspice" deviceset="C" device="C0603"/>
+<part name="TP1" library="testpad" deviceset="TP" device="TP20SQ"/>
+<part name="TP2" library="testpad" deviceset="TP" device="TP20SQ"/>
+<part name="TP3" library="testpad" deviceset="TP" device="TP20SQ"/>
+<part name="TP4" library="testpad" deviceset="TP" device="TP20SQ"/>
+<part name="TP5" library="testpad" deviceset="TP" device="TP20SQ"/>
+<part name="TP6" library="testpad" deviceset="TP" device="TP20SQ"/>
 <part name="U$8" library="lib" deviceset="BQ21040DBVR" device=""/>
-<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402" value="&lt;=1.2k"/>
-<part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402" value="10k"/>
-<part name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" value="1uF"/>
-<part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" value="1uF"/>
-<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
-<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="R4" library="resistor" deviceset="R-US_" device="R0402" value="&lt;=1.2k"/>
+<part name="R5" library="resistor" deviceset="R-US_" device="R0402" value="10k"/>
+<part name="C15" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
+<part name="C16" library="rcl" deviceset="C-EU" device="C0603" value="1uF"/>
+<part name="P+7" library="supply1" deviceset="V+" device=""/>
+<part name="P+8" library="supply1" deviceset="V+" device=""/>
 <part name="U$9" library="lib" deviceset="ALPS_SSSS810701" device=""/>
-<part name="C17" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206"/>
-<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402"/>
-<part name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402"/>
-<part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402"/>
-<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402"/>
-<part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402"/>
-<part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device="" value="asd"/>
-<part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="LED1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="SML0603"/>
-<part name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402"/>
-<part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="TP7" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ"/>
-<part name="TP8" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ"/>
+<part name="C17" library="eagle-ltspice" deviceset="C" device="C1206"/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="R6" library="resistor" deviceset="R-US_" device="R0402"/>
+<part name="R7" library="resistor" deviceset="R-US_" device="R0402"/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="P+6" library="supply1" deviceset="VCC" device=""/>
+<part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
+<part name="R8" library="resistor" deviceset="R-US_" device="R0402"/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="R9" library="resistor" deviceset="R-US_" device="R0402"/>
+<part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="R10" library="resistor" deviceset="R-US_" device="R0402"/>
+<part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
+<part name="FRAME1" library="frames" deviceset="A4L-LOC" device="" value="asd"/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
+<part name="LED1" library="eagle-ltspice" deviceset="LED_E" device="SML0603"/>
+<part name="R11" library="resistor" deviceset="R-US_" device="R0402"/>
+<part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
+<part name="TP7" library="testpad" deviceset="TP" device="TP20SQ"/>
+<part name="TP8" library="testpad" deviceset="TP" device="TP20SQ"/>
 </parts>
 <sheets>
 <sheet>
@@ -17245,11 +17229,6 @@ DIN A4, landscape with location and doc. field</description>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
-</note>
-<note version="8.2" severity="warning">
-Since Version 8.2, Eagle supports online libraries. The ids
-of those online libraries will not be understood (or retained)
-with this version.
 </note>
 </compatibility>
 </eagle>
