@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.1">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -15648,6 +15649,11 @@ DIN A4, landscape with location and doc. field</description>
 <part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="TP7" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ"/>
 <part name="TP8" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP20SQ"/>
+<part name="LED2" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="LED_E" device="SML0603"/>
+<part name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0402"/>
+<part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603"/>
+<part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603"/>
 </parts>
 <sheets>
 <sheet>
@@ -15658,9 +15664,9 @@ DIN A4, landscape with location and doc. field</description>
 <text x="216.5" y="10.6" size="1.778" layer="94">Revision: 2</text>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="96.52" y="116.84"/>
-<instance part="GND1" gate="1" x="109.22" y="101.6"/>
-<instance part="+3V1" gate="G$1" x="86.36" y="132.08"/>
+<instance part="U$1" gate="G$1" x="96.52" y="101.6"/>
+<instance part="GND1" gate="1" x="109.22" y="86.36"/>
+<instance part="+3V1" gate="G$1" x="86.36" y="116.84"/>
 <instance part="U$2" gate="G$1" x="137.16" y="91.44"/>
 <instance part="U$3" gate="G$1" x="241.3" y="93.98"/>
 <instance part="U$4" gate="G$1" x="200.66" y="137.16"/>
@@ -15856,6 +15862,11 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="+3V7" gate="G$1" x="109.22" y="147.32"/>
 <instance part="TP7" gate="G$1" x="180.34" y="165.1"/>
 <instance part="TP8" gate="G$1" x="180.34" y="157.48" rot="R180"/>
+<instance part="LED2" gate="G$1" x="91.44" y="132.08" rot="R270"/>
+<instance part="R12" gate="G$1" x="101.6" y="132.08" rot="R180"/>
+<instance part="GND18" gate="1" x="86.36" y="124.46"/>
+<instance part="C18" gate="G$1" x="109.22" y="157.48" rot="R180"/>
+<instance part="C19" gate="G$1" x="104.14" y="160.02" rot="R180"/>
 </instances>
 <busses>
 <bus name="SD_CLK,SD_CMD,SD_DAT[0..3],+3V3,GND,SPI_CS,SPI_SCK,SPI_MISO,SPI_MOSI,VCC/2,PA[0..15],PB[0..15],PC[0..15],BOOT0,NRST,BAT_SENS,SD_SWITCH">
@@ -15885,19 +15896,19 @@ DIN A4, landscape with location and doc. field</description>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="U$1" gate="G$1" pin="VSSA"/>
-<wire x1="109.22" y1="104.14" x2="109.22" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="88.9" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VSS4"/>
-<wire x1="109.22" y1="109.22" x2="109.22" y2="114.3" width="0.1524" layer="91"/>
-<junction x="109.22" y="109.22"/>
+<wire x1="109.22" y1="93.98" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
+<junction x="109.22" y="93.98"/>
 <pinref part="U$1" gate="G$1" pin="VSS3"/>
-<wire x1="109.22" y1="114.3" x2="109.22" y2="116.84" width="0.1524" layer="91"/>
-<junction x="109.22" y="114.3"/>
+<wire x1="109.22" y1="99.06" x2="109.22" y2="101.6" width="0.1524" layer="91"/>
+<junction x="109.22" y="99.06"/>
 <pinref part="U$1" gate="G$1" pin="VSS2"/>
-<wire x1="109.22" y1="116.84" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
-<junction x="109.22" y="116.84"/>
+<wire x1="109.22" y1="101.6" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
+<junction x="109.22" y="101.6"/>
 <pinref part="U$1" gate="G$1" pin="VSS1"/>
-<wire x1="109.22" y1="119.38" x2="109.22" y2="121.92" width="0.1524" layer="91"/>
-<junction x="109.22" y="119.38"/>
+<wire x1="109.22" y1="104.14" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
+<junction x="109.22" y="104.14"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -16079,27 +16090,41 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="U$6" gate="G$1" pin="GND"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND18" gate="1" pin="GND"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<wire x1="86.36" y1="127" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C19" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="157.48" x2="104.14" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="152.4" x2="109.22" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="152.4" x2="104.14" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="152.4" x2="109.22" y2="154.94" width="0.1524" layer="91"/>
+<junction x="109.22" y="152.4"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="VBAT"/>
 <pinref part="U$1" gate="G$1" pin="VDD1"/>
-<wire x1="86.36" y1="127" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="111.76" x2="86.36" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VDD2"/>
-<wire x1="86.36" y1="121.92" x2="86.36" y2="119.38" width="0.1524" layer="91"/>
-<junction x="86.36" y="121.92"/>
+<wire x1="86.36" y1="106.68" x2="86.36" y2="104.14" width="0.1524" layer="91"/>
+<junction x="86.36" y="106.68"/>
 <pinref part="U$1" gate="G$1" pin="VDD3"/>
-<wire x1="86.36" y1="119.38" x2="86.36" y2="116.84" width="0.1524" layer="91"/>
-<junction x="86.36" y="119.38"/>
+<wire x1="86.36" y1="104.14" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
+<junction x="86.36" y="104.14"/>
 <pinref part="U$1" gate="G$1" pin="VDD4"/>
-<wire x1="86.36" y1="116.84" x2="86.36" y2="114.3" width="0.1524" layer="91"/>
-<junction x="86.36" y="116.84"/>
+<wire x1="86.36" y1="101.6" x2="86.36" y2="99.06" width="0.1524" layer="91"/>
+<junction x="86.36" y="101.6"/>
 <pinref part="U$1" gate="G$1" pin="VDDA"/>
-<wire x1="86.36" y1="114.3" x2="86.36" y2="109.22" width="0.1524" layer="91"/>
-<junction x="86.36" y="114.3"/>
+<wire x1="86.36" y1="99.06" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
+<junction x="86.36" y="99.06"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<wire x1="86.36" y1="127" x2="86.36" y2="129.54" width="0.1524" layer="91"/>
-<junction x="86.36" y="127"/>
+<wire x1="86.36" y1="111.76" x2="86.36" y2="114.3" width="0.1524" layer="91"/>
+<junction x="86.36" y="111.76"/>
 </segment>
 <segment>
 <wire x1="190.5" y1="167.64" x2="195.58" y2="167.64" width="0.1524" layer="91"/>
@@ -16169,6 +16194,14 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="+3V7" gate="G$1" pin="+3V3"/>
 <wire x1="106.68" y1="142.24" x2="109.22" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="142.24" x2="109.22" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="132.08" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="132.08" x2="109.22" y2="142.24" width="0.1524" layer="91"/>
+<junction x="109.22" y="142.24"/>
+</segment>
+<segment>
+<pinref part="C18" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="162.56" x2="109.22" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -16252,6 +16285,10 @@ DIN A4, landscape with location and doc. field</description>
 <segment>
 <pinref part="X1" gate="-23" pin="1"/>
 <wire x1="127" y1="106.68" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C19" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="165.1" x2="104.14" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -17236,6 +17273,13 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="86.36" y1="142.24" x2="68.58" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$60" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="132.08" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -17247,7 +17291,7 @@ Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
 </note>
 <note version="8.2" severity="warning">
-Since Version 8.2, Eagle supports online libraries. The ids
+Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
 </note>
