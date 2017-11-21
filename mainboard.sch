@@ -15660,8 +15660,8 @@ DIN A4, landscape with location and doc. field</description>
 <plain>
 <text x="169.28" y="11.56" size="5.08" layer="94">Calculadora</text>
 <text x="216.5" y="20.8" size="1.778" layer="94">Designer: Scaglioni Giuliano</text>
-<text x="216.5" y="15.6" size="1.778" layer="94">Date: 01-16-2017</text>
-<text x="216.5" y="10.6" size="1.778" layer="94">Revision: 2</text>
+<text x="216.5" y="15.6" size="1.778" layer="94">Date: 11-20-2017</text>
+<text x="216.5" y="10.6" size="1.778" layer="94">Revision: 3</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="96.52" y="101.6"/>
